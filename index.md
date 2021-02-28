@@ -1,4 +1,6 @@
 1. java
+    1. JVM
+        1. [JVM运行时内存](doc/java/JVM/java-runtime-memory.md)
 2. redis
    1.  [缓存的优缺点](doc/redis/cache-pros-and-cons.md) 
    2.  [redis常见问题](doc/redis/redis-common-problem.md) 
@@ -10,5 +12,5 @@
 
     1.  [消息队列的基本知识](doc/MQ/MQ.md) 
 4. 计算机基础
-5.  [设计模式](doc/pattern/pattern.md) 
+5. [设计模式](doc/pattern/pattern.md) 
 
