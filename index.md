@@ -1,8 +1,9 @@
 1. java
     1. JVM
         1. [JVM运行时内存](doc/java/JVM/java-runtime-memory.md)
-        2. [JVM如何确定垃圾](doc\java\JVM\java-garbage-collection.md) 
-        3. [JVM垃圾回收算法](doc\java\JVM\java-garbage-collection-algorithm.md) 
+        2. [JVM如何确定垃圾](doc/java/JVM/java-garbage-collection.md) 
+        3. [JVM垃圾回收算法](doc/java/JVM/java-garbage-collection-algorithm.md) 
+        4.  [java中4种引用类型](doc/java/JVM/java-4-reference-type.md) 
 2. redis
    1.  [缓存的优缺点](doc/redis/cache-pros-and-cons.md) 
    2.  [redis常见问题](doc/redis/redis-common-problem.md) 
