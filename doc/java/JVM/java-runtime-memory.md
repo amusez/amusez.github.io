@@ -10,7 +10,7 @@
          1. 保留了一次MinorGC过程中的幸存者
       4. MinorGC的过程(复制-清空-互换)
          1. **minorGC采用复制算法**
-            1. eden与ServivorFrom中存活的对象复制到ServivorTo(如果有对象的年龄已经达到了老年代的标准,则复制到老年代区),同时把这些对象的年龄+1(如果ServivorTo位置不够就放到老年区)
+            1. eden与ServivorFrom中存活的对象复制到ServivorTo(如果有对象的年龄已经达到了老年代的标准,则复制到老年代区),同时把这些对象的年龄+1(如果ServivorTo位置不够就放到老年区),达到最大年龄15就进入老年区(因为 JVM 中使用 4 个比特来表示对象的年龄)
             2. 清空eden和ServivorFrom中的对象
             3. ServivorTo和ServivorFrom互换,原来的ServivorTo成为下一次GC时的ServivorFrom
    2. 老年代主要存放应用程序中生命周期长的内存对象,老年代的对象比较稳定,MajorGC不会频繁执行.在进行MajorGC前一般都先进行了一次MinorGC,使得有新生代的对象到了老年代,导致空间不够用时才触发.当无法找到足够大的连续空间分配给新创建的较大对象时也会提前触发一次MajorGC
