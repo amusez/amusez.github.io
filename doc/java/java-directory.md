@@ -10,4 +10,6 @@
 2.  IO
     1.  [IO模型](IO/IO-model.md)
     2.  [NIO](IO/java-NIO.md)
+3.  java基础知识
+    1.  [HashMap](source/java-hashmap.md)
 
