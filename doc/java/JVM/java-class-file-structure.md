@@ -68,3 +68,19 @@
              1.  标志类型的布尔属性,用于表示某个类/字段/方法不再推荐使用
         11.  Synthetic属性
              1.  代表此字段/方法不是Java源码直接产生的,而是由编译器自行添加的
+        12.  StackMapTable属性
+             1.  在虚拟机类加载的字节码验证阶段被新类型检查验证器使用,目的在于代替以前比较消耗性能的基于数据流分析的类型推到验证器
+             2.  一个方法的Code属性最多只能有一个StackMapTable属性,否则怕出ClassFormatError异常
+        13.  Signature属性
+             1.  用于记录泛型签名信息
+             2.  Java语言的泛型采用的是擦除法实现的伪泛型,Code属性中所有的泛型信息编译在编译之后都被擦除掉
+        14.  BootstrapMethods属性
+             1.  用于保存invokedynamic指令引用的引导方法限定符
+        15.  MethodParameters属性
+             1.  用于记录方法的各个形参名称和信息
+        16.  模块化相关属性
+             1.  Module/ModulePackages/ModuleMainClass
+             2.  JDK9新加的
+        17.  运行时注解相关属性
+             1.  JDK5 : RuntimeVisibleAnnotations/RuntimeInvisibleAnnotations/RuntimeVisibleParameterAnnotations/RuntimeInvisibleParameter- Annotations
+             2.  JDK8 : RuntimeVisibleTypeAnnotations/RuntimeInvisibleTypeAnnotations
