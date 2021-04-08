@@ -7,8 +7,8 @@
     4.  [java中4种引用类型](JVM/java-4-reference-type.md) 
     5.  [GC垃圾回收器](JVM/java-garbage-collector.md)
     6.  [java类文件结构](JVM/java-class-file-structure.md)
-    7.  [java类加载器/双亲委派](JVM/java-parents-delegation-model.md)
-    8.  [java类加载](JVM/java-class-load.md)
+    7.  [java类加载](JVM/java-class-load.md)
+    8.  [java类加载器/双亲委派](JVM/java-parents-delegation-model.md)
 2.  IO
     1.  [IO模型](IO/IO-model.md)
     2.  [NIO](IO/java-NIO.md)
